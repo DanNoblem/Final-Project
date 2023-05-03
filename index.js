@@ -16,7 +16,7 @@ const MONGODB_URI = config.MONGODB_URI;
 mongoose.connect(MONGODB_URI, {useNewUrlParser: true});
 
 // --- connect to your collection ---
-const todos = require('./public/models/todo.js');
+const todos = require('./todo.js');
 
 // Handle data in a nice way
 app.use(express.json());
